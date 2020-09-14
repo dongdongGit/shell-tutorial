@@ -945,10 +945,10 @@ String=abcABC123ABCabc
 #       └------------┘
 
 echo ${String%b*c}      # abcABC123ABCa
-# 从$String后面尾部开始，剥去匹配'a'到'C'之间最短的字符串.
+# 从$String后面尾部开始，剥去匹配'b'到'c'之间最短的字符串.
 
 echo ${String%%b*c}     # a
-# 从$String后面尾部开始，剥去匹配'a'到'C'之间最长的字符串.
+# 从$String后面尾部开始，剥去匹配'b'到'c'之间最长的字符串.
 ```
 
 ### 用awk处理字符串
